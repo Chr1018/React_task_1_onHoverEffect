@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.parent {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  transition: box-shadow 0.4s;
+  overflow: hidden;
+}
+.initailDisplay {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow-y: hidden;
+  transition: 0.4s;
+}
+
+.parent:hover .initailDisplay {
+  margin-top: -110%;
+
+  /* visibility: hidden; */
+}
+.parent:hover {
+  box-shadow: 15px 15px 0px pink;
+}
+
+.onHoverDisplay {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 20px;
+  color: azure;
+  height: 300px;
+  width: 300px;
+  background-color: burlywood;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.parent:hover .onHoverDisplay {
+  left: 0%;
+  /* top: -5%; */
+}
